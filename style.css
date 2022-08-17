@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar{
+    padding: 20px;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar .menu{
+    list-style: none;
+
+    display: flex;
+    gap: 15px;
+    align-content: center;
+}
+
+.filters{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+}
+
+.addBookContainer{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.addBook{
+    border: 2px solid black;
+    padding: 0.8rem;
+}
+
+

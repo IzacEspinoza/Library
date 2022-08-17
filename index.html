@@ -9,26 +9,37 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div class="nav-bar">
+
             <div class="logo">
                 <h1>Library</h1>
             </div>
 
             <ul class="menu">
-                <li>item1</li>
-                <li>item2</li>
-                <li>item3</li>
+                <li>
+                    <button class="filters">Read</button>
+                </li>
+                <li>
+                    <button class="filters">Unread</button>
+                </li>
+                <li>
+                    <button class="filters">Favorites</button>
+                </li>
             </ul>
-        </nav>
+
+        </div>
     </header>
 
     <main>
+
         <div class="addBookContainer">
-            <button class="addBook"></button>
+            <button class="addBook">+ Add a Book</button>
         </div>
 
-        <div class="bookshelf"></div>
+         <div class="bookshelf"></div>
+
     </main>
+
     <script src="app.js"></script>
 </body>
 </html>
