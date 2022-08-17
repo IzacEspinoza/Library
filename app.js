@@ -11,6 +11,7 @@ function Book(title, author, pages, status){
 
 //add a book to Library
 function addBook(){
-    //do the stuff here
+    //take user’s input 
+    //store the new book objects into myLibrary[]
 }
 
