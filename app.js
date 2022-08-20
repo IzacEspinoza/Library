@@ -1,6 +1,9 @@
 //All book objects stored in this array
 let myLibrary = [];
 
+//our bookshelf
+let bookCase = document.querySelector('bookshelf');
+
 //book constructor
 function Book(title, author, pages, status){
     this.title = title;
@@ -16,6 +19,8 @@ function addBook(){
     //store the new book objects into myLibrary[]
     myLibrary.push(info);
 
+    return info;
+
 
 }
 
@@ -25,7 +30,6 @@ let book1 = new Book('Witcher', 'Geralt', 200, 'read');
 let book2 = new Book('Ghost recon', 'Tom Clancy', 654, 'not read');
 
 //testing our add book function
-for(let i = 0; i < 4; i++){
-    addBook();
-}
+addBook();
 console.log(myLibrary);
+
