@@ -14,4 +14,3 @@ function addBook(){
     //take user’s input 
     //store the new book objects into myLibrary[]
 }
-
