@@ -20,6 +20,20 @@ function addBook(newBook){
     return newBook;
 }
 
+//remove book from Library
+function removeBook(bookToBoot){
+    //let removal = myLibrary.filter(book => book !== bookToBoot);
+    myLibrary.splice(myLibrary.indexOf(bookToBoot), 1);
+    return bookToBoot;
+}
+
+//test our functions
+// addBook('The Witcher');
+// addBook('Game of Thrones');
+// addBook('Elden Ring');
+// addBook('Harry Potter');
+
+
 //Possible form pop up JS
 /** 
  * var opener = document.getElementById("opener");
