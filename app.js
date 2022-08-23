@@ -13,23 +13,37 @@ function Book(title, author, pages, status){
 }
 
 //add a book to Library
-function addBook(){
-    //take user’s input 
-    let info = prompt('stuff?');
-    //store the new book objects into myLibrary[]
-    myLibrary.push(info);
-
-    return info;
-
-
+function addBook(newBook){
+    //push that onto the myLibrary[]
+    myLibrary.push(newBook);
+    //return what book was added
+    return newBook;
 }
 
-//test our constructor n stuff
-let book1 = new Book('Witcher', 'Geralt', 200, 'read');
-// console.log(book1);
-let book2 = new Book('Ghost recon', 'Tom Clancy', 654, 'not read');
+//Possible form pop up JS
+/** 
+ * var opener = document.getElementById("opener");
 
-//testing our add book function
-addBook();
-console.log(myLibrary);
+opener.onclick = function(){
+
+    var lightbox = document.getElementById("lightbox"),
+        dimmer = document.createElement("div");
+
+    dimmer.style.width =  window.innerWidth + 'px';
+    dimmer.style.height = window.innerHeight + 'px';
+    dimmer.className = 'dimmer';
+
+    dimmer.onclick = function(){
+        document.body.removeChild(this);   
+        lightbox.style.visibility = 'hidden';
+    }
+
+    document.body.appendChild(dimmer);
+
+    lightbox.style.visibility = 'visible';
+    lightbox.style.top = window.innerHeight/2 - 50 + 'px';
+    lightbox.style.left = window.innerWidth/2 - 100 + 'px';
+    return false;
+}
+*/
 
