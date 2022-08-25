@@ -32,21 +32,33 @@
     justify-content: center;
 }
 
-.addBook{
+#addBook{
     border: 2px solid black;
     padding: 0.8rem;
 }
 
+#bookshelf{
+    height: auto;
+    padding: 5px;
+
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+
+
 /* Fomr pop up styling */
-/* #lightbox{
+#lightbox{
     visibility:hidden;
     position:absolute;
-    background:red;
+    background:white;
     border:2px solid #3c3c3c;
-    color:white;
+    border-radius: 10px;
+    color:black;
     z-index:100;
     width: 200px;
-    height:100px;
+    height:200px;
     padding:20px;
 }
 
@@ -56,6 +68,6 @@
     opacity: .5;
     top: 0;
     z-index:99;
-} */
+}
 
 
