@@ -47,6 +47,17 @@
     justify-content: center;
 }
 
+#bookForm{
+    
+    
+}
+
+input{
+    /* border: 2px solid red; */
+    padding: 5px;
+    margin: 5px;
+}
+
 
 /* Fomr pop up styling */
 #lightbox{
