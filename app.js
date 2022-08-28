@@ -71,12 +71,13 @@ createBook.onclick = function(){
     let newBook = new Book(title.value, author.value, pageCount.value, haveRead.value);
     addBook(newBook);
 
-    //clsoe the form after hittingh button again
-
-    //bookform.style.visibility = 'hidden';
-    // dimmer.style.visibility = 'hidden';
-
-    //also gotta reset the inputs after each book
-
+    //reset inputs for next book
+    title.value = '';
+    author.value = '';
+    pageCount.value = '';
+    haveRead = '';
+    
+    //close the form after hittingh button again
+    bookform.style.visibility = 'hidden';
 
 }
