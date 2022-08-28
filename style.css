@@ -47,11 +47,6 @@
     justify-content: center;
 }
 
-#bookForm{
-    
-    
-}
-
 input{
     /* border: 2px solid red; */
     padding: 5px;
@@ -59,8 +54,8 @@ input{
 }
 
 
-/* Fomr pop up styling */
-#lightbox{
+/* Form pop up styling */
+#bookform{
     visibility:hidden;
     position:absolute;
     background:white;
