@@ -61,10 +61,22 @@ let author = document.querySelector('[name="author"]');
 let pageCount = document.querySelector('[name="page-count"]');
 let haveRead = document.querySelector('[name="read"]');
 
+
 //create book button, creates new book from users input and adds to library[]
 const createBook = document.getElementById("createBook");
 
 createBook.onclick = function(){
+
+    //create a new book object from users input
     let newBook = new Book(title.value, author.value, pageCount.value, haveRead.value);
     addBook(newBook);
+
+    //clsoe the form after hittingh button again
+
+    //bookform.style.visibility = 'hidden';
+    // dimmer.style.visibility = 'hidden';
+
+    //also gotta reset the inputs after each book
+
+
 }
