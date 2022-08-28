@@ -1,8 +1,3 @@
-//All book objects stored in this array
-let myLibrary = [];
-
-//our bookshelf
-let bookCase = document.querySelector('bookshelf');
 
 //book constructor
 function Book(title, author, pages, status){
@@ -52,4 +47,25 @@ opener.onclick = function(){
     return false;
 }
 
+// //test, try to access the value that user inputs
+// function test(){
+//     const val = document.querySelector('input').value;
+//     alert(val);
+// }
+
+/*************************************************** */
+
+//our bookshelf
+let bookCase = document.querySelector('bookshelf');
+
+//All book objects stored in this array
+let myLibrary = [];
+
+//store users inputs for the new book to add
+let title = document.querySelector('[name="title"]');
+let author = document.querySelector('[name="author"]');
+let pageCount = document.querySelector('[name="page-count"]');
+let haveRead = document.querySelector('[name="read"]');
+
+//let testBook = new Book(title.value, author.value, pageCount.value, haveRead.value);
 

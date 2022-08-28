@@ -47,19 +47,36 @@
     justify-content: center;
 }
 
-input{
-    /* border: 2px solid red; */
+#bookform input{
+    border: 1px solid black;
+    border-radius: 5px;
     padding: 5px;
     margin: 5px;
 }
 
+#readOrNot{
+    border: none;
+    margin: 5px;
+}
+
+#create{
+   display: flex;
+   justify-content: center;
+   padding: 5px;
+}
+
+#create button{
+    width: 50px;
+    height: auto;
+    padding: 5px;
+}
 
 /* Form pop up styling */
 #bookform{
     visibility:hidden;
     position:absolute;
     background:white;
-    border:2px solid #3c3c3c;
+    border:5px double #000;
     border-radius: 10px;
     color:black;
     z-index:100;
