@@ -47,12 +47,6 @@ opener.onclick = function(){
     return false;
 }
 
-// //test, try to access the value that user inputs
-// function test(){
-//     const val = document.querySelector('input').value;
-//     alert(val);
-// }
-
 /*************************************************** */
 
 //our bookshelf
@@ -67,5 +61,10 @@ let author = document.querySelector('[name="author"]');
 let pageCount = document.querySelector('[name="page-count"]');
 let haveRead = document.querySelector('[name="read"]');
 
-//let testBook = new Book(title.value, author.value, pageCount.value, haveRead.value);
+//create book button, creates new book from users input and adds to library[]
+const createBook = document.getElementById("createBook");
 
+createBook.onclick = function(){
+    let newBook = new Book(title.value, author.value, pageCount.value, haveRead.value);
+    addBook(newBook);
+}
