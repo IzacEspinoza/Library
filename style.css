@@ -38,8 +38,9 @@
 }
 
 #bookshelf{
-    height: auto;
+    height: 200px;
     padding: 5px;
+    background-color: red;
 
     display: grid;
     grid-template: auto / 1fr 1fr;
