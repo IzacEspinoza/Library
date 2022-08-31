@@ -47,6 +47,12 @@ opener.onclick = function(){
     return false;
 }
 
+//Embed the book objects made from the form input to the DOM
+const embedElements = () => {
+    let display = myLibrary.toString();
+    document.getElementById('test').innerHTML = display;
+}
+
 /*************************************************** */
 
 //our bookshelf
@@ -70,6 +76,8 @@ createBook.onclick = function(){
     //create a new book object from users input
     let newBook = new Book(title.value, author.value, pageCount.value, haveRead.value);
     addBook(newBook);
+    //embed the Book objects and display in DOM
+    embedElements();
 
     //reset inputs for next book
     title.value = '';
@@ -82,12 +90,6 @@ createBook.onclick = function(){
 
 }
 
-//possible function that displays array items to DOM
-/*
-//testing
-const embedElements = () => {
-    myLibrary.forEach(element => {
-        document.getElementById('bookCase').innerHTML += `<div>${element}</div><br />`;
-    });
-}
-*/
+
+
+
