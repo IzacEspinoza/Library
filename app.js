@@ -76,8 +76,18 @@ createBook.onclick = function(){
     author.value = '';
     pageCount.value = '';
     haveRead = '';
-    
+
     //close the form after hittingh button again
     bookform.style.visibility = 'hidden';
 
 }
+
+//possible function that displays array items to DOM
+/*
+//testing
+const embedElements = () => {
+    myLibrary.forEach(element => {
+        document.getElementById('bookCase').innerHTML += `<div>${element}</div><br />`;
+    });
+}
+*/
