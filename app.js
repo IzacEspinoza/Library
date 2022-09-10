@@ -49,9 +49,21 @@ opener.onclick = function(){
 
 //Embed the book objects made from the form input to the DOM
 const embedElements = () => {
-    let display = myLibrary.toString();
-    // let display = myLibrary.forEach(element => console.log(element.title));
-    document.getElementById('test').innerHTML = display;
+    
+    let display = "<table border = '1 | 1' >";
+
+    for(let i = 0; i < myLibrary.length; i++){
+        //document.getElementById('test').innerHTML = 
+        display += '<tr>';
+        display += '<td>' + myLibrary[i].title + '</td';
+        display += '<td>' + myLibrary[i].author + '</td';
+        display += '<td>' + myLibrary[i].pages + '</td';
+            
+    }//end loop
+
+    //to DOM?
+    document.getElementById("test").innerHTML = display;
+
     //log the current display content
     console.log(display);
 }
