@@ -62,7 +62,7 @@ const embedElements = () => {
     }//end loop
 
     //to DOM?
-    document.getElementById("test").innerHTML = display;
+    document.getElementById("display").innerHTML = display;
 
     //log the current display content
     console.log(display);
