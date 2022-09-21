@@ -40,7 +40,7 @@
 #bookshelf{
     height: 200px;
     padding: 5px;
-    /* background-color: red; */
+    background-color: slategray;
     border: 2px dashed black;
 
     display: grid;
@@ -73,15 +73,14 @@
     padding: 5px;
 }
 
-#bookshelf{
-    background-color: slategray;
-}
+
 
 td{
-    background-color: red;
     width: 100px;
     height: 100px;
     color: white;
+    border: 5px double black;
+    padding: 5px;
 }
 
 /* Form pop up styling */
