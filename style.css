@@ -77,9 +77,9 @@
 
 td{
     width: 100px;
-    height: 100px;
+    height: 150px;
     color: white;
-    border: 5px double black;
+    border: 2px double black;
     padding: 5px;
 }
 

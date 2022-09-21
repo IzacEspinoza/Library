@@ -56,14 +56,14 @@ const embedElements = () => {
         
         //document.getElementById('test').innerHTML = 
         display += '<tr>';
-        display += '<td>' + myLibrary[i].title + '</td';
+        display += '<td>' + myLibrary[i].title + '</br>' + '</td';
 
         //display += '<th>';
-        display += '<td>' + myLibrary[i].author + '</td';
+        display += '<td>' + myLibrary[i].author + '</br>' + '</td';
 
         //display += '<th>';
-        display += '<td>' + myLibrary[i].pages + '</td';
-            
+        display += '<td>' + myLibrary[i].pages + '</br>' + '</td';
+        
     }//end loop
 
     //to DOM?
