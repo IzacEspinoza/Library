@@ -39,15 +39,17 @@
 
 #bookshelf{
     height: 200px;
+    width: 100%;
     padding: 5px;
     background-color: slategray;
     border: 2px dashed black;
-
-    display: grid;
-    grid-template: auto / 1fr 1fr;
-    gap: 20px;
-    justify-content: center;
 }
+
+#display{
+    height: 100%;
+    width: 100%;
+}
+
 
 #bookform input{
     border: 1px solid black;
@@ -73,12 +75,10 @@
     padding: 5px;
 }
 
-
-
 td{
     width: 100px;
     height: 150px;
-    color: white;
+    color: red;
     border: 2px double black;
     padding: 5px;
 }

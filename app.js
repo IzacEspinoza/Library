@@ -53,17 +53,16 @@ const embedElements = () => {
     let display = "<table border = '1 | 1' >";
 
     for(let i = 0; i < myLibrary.length; i++){
-        
-        //document.getElementById('test').innerHTML = 
-        display += '<tr>';
+         
+        display += '<th>';
+        //Title
         display += '<td>' + myLibrary[i].title + '</br>' + '</td';
-
-        //display += '<th>';
+        //Author
         display += '<td>' + myLibrary[i].author + '</br>' + '</td';
-
-        //display += '<th>';
+        //Page Number
         display += '<td>' + myLibrary[i].pages + '</br>' + '</td';
-        
+        display += '<td>' + '<button>' + 'Remove book' + '</button>' + '</td>';   
+
     }//end loop
 
     //to DOM?
